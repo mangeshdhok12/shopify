@@ -2,10 +2,9 @@
   "name": "shopify-store",
   "version": "1.0.0",
   "main": "server.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-  
-    "start":" node server.js "
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",

@@ -2,10 +2,8 @@ import express from "express"
 import dotenv from 'dotenv'
 import cors from 'cors'
 import mongoose from "mongoose"
-// import ordersRouter from './routes/orders.js';
-// import customerRouter from "./routes/customers.js";
-import OrderModel from "./models/Order.js";
-import CustomerModel from "./models/Customer.js";
+import OrderModel from "../models/Order.js";
+import CustomerModel from "../models/Customer.js";
 
 
 
@@ -14,7 +12,7 @@ const app= express()
 dotenv.config()
 
 app.use(cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://shopify-front-one.vercel.app"],
     methods: ["GET"],
     credentials:true
 }));
